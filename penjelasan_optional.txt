@@ -1,0 +1,34 @@
+JAVASCRIPT
+1. penggunaan function themeButton
+   untuk mengubah warna jika tombol ganti tema (ikon matahari di kanan atas) diklik
+   pada fungsi ini, digunakan percabangan if-else yang mengubah warna.
+2. penggunaan function toggleContributor
+   untuk membuat nama-nama kontributor yang tersembunyi terlihat.
+   jika tombol '3+ more' diklik, maka nama kontributor akan expand dan menunjukkan nama-nama yang tersembunyi.
+   pada fungsi ini, ada dua list nama yaitu list nama ketika kontributor lainnya masih tersembunyi dan saat semua
+   kontributor terlihat. perulangan if-else digunakan untuk menyembunyikan list nama ketika kontributor lainnya masih tersembunyi
+   dan memperlihatkan list kontributor yang lengkap ketika tombol '3+ more' diklik.
+3. penggunaan function toggleProjects
+   untuk menunjukkan projek-projek tersembunyi.
+   jika tombol 'more' diklik, maka 3 projek yang tersembunyi akan terlihat, digunakan perulangan if-else yang mirip
+   dengan yang ada pada function toggleContributor.
+4. penggunaan function scrollHome dan scrollAnalytics
+   untuk memindahkan tampilan website menjadi bagian lain ketika suatu tombol diklik.
+   pada program ini, scrollHome digunakan untuk mengubah tampilan website menuju bagian website paling atas ketika tulisan
+   'OmahTI Analytics' pada header diklik.
+   sedangkan scrollAnalytics digunakan untuk mengubah tampilan website menuju bagian contributors and projects ketika
+   tombol 'More Analytics' pada bagian atas website diklik
+5. penggunaan document.getElementById('namaId').addEventListener('click', function() {alert('alert')});
+   untuk menunjukkan alert dari website ketika suatu tombol diklik.
+
+HTML
+1. penggunaan onclick="window.open('link', '_blank');"
+   untuk membuka website lain di tab baru ketika button diklik.
+2. penggunaan onclick="function()"
+   untuk mengimpor fungsi dari web.js ke index.html
+
+CSS
+1. penggunaan transition
+   untuk memberikan transisi saat pergantian tema
+2. penggunaan .kelas:hover
+   untuk membuat animasi hover ketika kursor diarahkan kepada elemen
