@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>OmahTI Analytics</title>
+    
+</head>
+<body>
+    <header class="navbar">
+        <div class="title-and-links">
+            <button class="omahti-analytics-button" onclick="scrollHome()">OmahTI Analytics</button> 
+            <button class="header-button" id="divisions" style="width: 69px;">Divisions</button> 
+            <button class="header-button" id="features" style="width: 67px;">Features</button>
+            <button class="header-button" onclick="window.open('https://omahti.web.id/about-us/', '_blank');" style="width: 47px;">About</button> 
+            <button class="header-button" onclick="window.open('https://omahti.web.id/', '_blank');" style="width: 62px;">Contact</button> 
+        </div>
+        <div class="auth-buttons">
+            <button class="theme-button" onclick="themeButton()"> 
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#a1a1a1"><path d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm283-100q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-160Z"/></svg>
+            </button>
+            <button class="sign-in-button" id="signIn">Sign In</button>
+            <button class="sign-up-button" id="signUp">Sign Up</button>
+        </div>
+    </header>
+    <main>
+        <div class="main-1">
+            <button class="all-divisions-button" id="allDivisions">All OmahTI Divisions -></button>
+            <h1 class="hero-header">Get essential insights on OmahTI</h1>
+            <button class="get-started-button" id="getStarted">Get Started</button>
+            <button class="more-analytics-button" onclick="scrollAnalytics()">More Analytics</button>
+        </div>
+
+        <div style="display: flex;">
+            <div class="main-div">
+                <p class="sub-main"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#a1a1a1"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg> Project Tracking</p>
+                <p class="main-text">Monitor progress and contributions across <span class="gray-main-text">all OmahTI projects.</span></p>
+                <img src="gambar/gambar 4.JPG" class="img">
+            </div>
+            <div class="main-div" style="border-right: none;">
+                <p class="sub-main"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#a1a1a1"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg> Competition Analytics</p>
+                <p class="main-text">Track participation and contributions<span class="gray-main-text"> in IT Competitions.</span></p>
+                <img src="gambar/gambar 5.jpg" class="img">
+            </div>
+        </div>
+        
+        <div class="main-2">
+            <div class="latest-projects-and-contributor"> 
+                <h1 class="latest-projects">Latest projects and winnings by OmahTI divisions.</h1>
+                <div class="contributor">
+                    <h4 style="margin-block-end: 0; margin-block-start: 0;">Contributors:</h4>
+                    <ul class="contributors-name">
+                        <li>Andreandhiki Riyanta</li>
+                        <li>Fahmi Shampoerna</li>
+                        <li>Daniel Tulung</li>
+                    </ul>
+                    <div class="more-contributors-name">
+                        <ul class="contributors-name">
+                            <li>Andreandhiki Riyanta</li>
+                            <li>Fahmi Shampoerna</li>
+                            <li>Daniel Tulung</li>
+                            <li>Rama Andhika Pratama</li>
+                            <li>Muhammad Hanif</li>
+                            <li>Wibi Laksono Wijaya</li>
+                        </ul>
+                    </div>
+                    <button class="contributors-name-button" onclick="toggleContributor()">+3 more</button>
+                </div>   
+            </div>
+            <div class="start">
+                <p style="font-size: 36px; font-weight: 700; margin: 28px 0 28px 0;">Ready to share? <span class="gray-main-text">Start by creating an account. Speak to an </span><span class="blue-text"> expert </span><span class="gray-main-text">if you need assistance.</span> </p>
+                <div class="start-button">
+                    <button class="sign-up-button-2" id="signUp2">Sign Up</button>
+                    <button class="contact-button" onclick="window.open('https://omahti.web.id/', '_blank');">Contact</button>
+                </div>    
+            </div>    
+                <div class="projects">
+                    <div class="projects-card">
+                        <img src="gambar/gambar 1.jpg" class="projects-img"> 
+                        <p class="projects-title">OmahTI Learning Center</p>
+                    </div>
+                    <div class="projects-card">
+                        <img src="gambar/gambar 2.jpg" class="projects-img"> 
+                        <p class="projects-title">Data Royale</p>
+                    </div>
+                    <div class="projects-card">
+                        <img src="gambar/gambar 3.jpg" class="projects-img"> 
+                        <p class="projects-title">OemOem</p>
+                    </div>
+                    <div class="projects-card">
+                        <img src="gambar/gambar 6.jpg" class="projects-img"> 
+                        <p class="projects-title">1st Place Datathon</p>
+                    </div>
+                    <div class="projects-card">
+                        <img src="gambar/gambar 7.jpg" class="projects-img"> 
+                        <p class="projects-title">PORSENIGAMA</p>
+                    </div>
+                    <div class="projects-card">
+                        <img src="gambar/gambar 8.jpg" class="projects-img"> 
+                        <p class="projects-title">FMIPA Projects</p>
+                    </div>
+                    <div class="more-projects">
+                        <div class="projects-card">
+                            <img src="gambar/gambar 9.JPG" class="projects-img"> 
+                            <p class="projects-title">MALPRES MIPA</p>
+                        </div>
+                        <div class="projects-card">
+                            <img src="gambar/gambar 10.jpg" class="projects-img"> 
+                            <p class="projects-title">FEB UGM's Website</p>
+                        </div>
+                        <div class="projects-card">
+                            <img src="gambar/gambar 11.jpeg" class="projects-img"> 
+                            <p class="projects-title">Kopassus</p>
+                    </div>
+                    </div>
+                    <button class="projects-button" onclick="toggleProjects()">
+                        <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+                        </svg>
+                        <span class="button-text">More</span>
+                    </button>
+                </div> 
+            </div>    
+        </div>        
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-text">
+                <p class="footer-title">Information</p>
+                <button class="footer-button" onclick="window.open('https://omahti.web.id/about-us/', '_blank');">About</button>
+                <button class="footer-button" onclick="window.open('https://omahti.web.id/', '_blank');">Contact</button>
+                <button class="footer-button" id="cookiePolicy">Cookie Policy</button>
+                <button class="footer-button" id="termsCondition">Terms and Conditions</button>
+                <button class="footer-button" id="privacyPolicy">Privacy Policy</button>
+            </div>
+                <div class="footer-text">
+                    <p class="footer-title">Social</p>
+                    <button class="footer-button" onclick="window.open('https://github.com/OmahTI-UGM', '_blank');">GitHub</button>
+                    <button class="footer-button" onclick="window.open('https://www.instagram.com/omahti_ugm/', '_blank');">Instagram</button>
+                    <button class="footer-button" onclick="window.open('https://www.linkedin.com/company/omahti/', '_blank');">linkedIn</button>
+                    <button class="footer-button" onclick="window.open('https://x.com/OmahTI_ugm', '_blank');">Twitter</button>
+                </div>
+            <div class="footer">
+                <p class="footer-2"><svg class="footer-2" style="padding: 0;" xmlns="http://www.w3.org/2000/svg" fill="#0090ff" height="13px" width="13px" viewBox="0 0 26 26"><g><path d="M26,13c0,7.18-5.818,13-13,13C5.82,26,0,20.18,0,13C0,5.82,5.82,0,13,0C20.182,0,26,5.82,26,13z"/></g></svg>All systems normal</p>
+            </div>
+        </div>
+    </footer>
+    <script src="web.js"></script>
+</body>
+</html>
